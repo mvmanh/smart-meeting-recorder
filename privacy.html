@@ -12,7 +12,6 @@
 <h2>What the extension handles</h2><ul>
 <li><b>Screen, tab, window, microphone and camera streams</b> you choose to record, written to your browser's local storage (IndexedDB) as video files.</li>
 <li><b>Meeting details seen on the Meet page</b> (title, participant names, join and leave times) when attendance is on, to build attendance sheets.</li>
-<li><b>A participant announcement whitelist</b> you enter. Names and preferences are stored locally; per-meeting presence and once-only announcement state are kept in browser session storage. When enabled, participant names are read even with attendance recording off. Only local text-to-speech voices are used; names are not sent to a remote speech service.</li>
 <li><b>Class rosters, notes and settings</b> you enter or import.</li>
 <li><b>A local diagnostic log</b> of errors and recording events. It stays on your computer and is shared only if you press "Export log" and send the file yourself. It does not contain recording titles or video content.</li></ul>
 <h2>What is never done</h2><p>No upload, no remote code, no tracking, no selling or sharing of data, no reading of pages other than Google Meet (and the tab or screen you choose to record). Chrome and Google Meet keep doing their own normal network activity.</p>
@@ -21,7 +20,6 @@
 <tr><td><code>desktopCapture</code></td><td>Record a window or the whole screen through Chrome's own picker.</td></tr>
 <tr><td><code>activeTab</code>, <code>scripting</code></td><td>Attach the recording controls to the Google Meet tab you are on, after you click the extension.</td></tr>
 <tr><td><code>storage</code></td><td>Keep settings and the language you chose.</td></tr>
-<tr><td><code>tts</code></td><td>Read whitelisted participant names aloud in the selected language using a local voice.</td></tr>
 <tr><td><code>offscreen</code></td><td>Keep a tab recording running when the popup closes.</td></tr>
 <tr><td>Access to <code>meet.google.com</code></td><td>Show the floating controls and read participant names for attendance.</td></tr></table>
 <h2>Where data lives and how to delete it</h2><p>Everything is in this browser profile. Delete a recording or a class inside the extension's Library, or remove the extension or clear its site data to erase everything. Exported files and backups are outside the extension's control. Browser deletion is not forensic erasure. If your computer or browser profile is shared, others may be able to open your recordings.</p>
@@ -32,7 +30,6 @@
 <h2>Dữ liệu được xử lý</h2><ul>
 <li><b>Luồng màn hình, tab, cửa sổ, micro và camera</b> bạn chọn ghi, lưu trong bộ nhớ cục bộ của trình duyệt (IndexedDB) dưới dạng file video.</li>
 <li><b>Thông tin cuộc họp hiện trên trang Meet</b> (tên cuộc họp, tên người tham gia, giờ vào/ra) khi bật điểm danh, để lập bảng điểm danh.</li>
-<li><b>Danh sách tên cho thông báo ra/vào</b> do bạn nhập. Tên và tùy chọn được lưu cục bộ; trạng thái hiện diện và giới hạn đọc một lần được giữ trong phiên trình duyệt. Khi bật thông báo, tiện ích đọc tên người tham gia kể cả khi tắt điểm danh. Chỉ dùng giọng đọc cục bộ; tên không được gửi tới dịch vụ đọc giọng nói từ xa.</li>
 <li><b>Danh sách lớp, ghi chú và cài đặt</b> do bạn nhập hoặc nhập từ file.</li>
 <li><b>Nhật ký chẩn đoán cục bộ</b> về lỗi và sự kiện ghi hình. Chỉ rời máy khi bạn bấm "Xuất nhật ký" và tự gửi đi; không chứa tên bản ghi hay nội dung video.</li></ul>
 <h2>Không bao giờ</h2><p>Tải lên, chạy mã từ xa, theo dõi, bán hoặc chia sẻ dữ liệu, đọc các trang khác ngoài Google Meet (và tab hay màn hình bạn chọn ghi). Chrome và Google Meet vẫn hoạt động mạng bình thường của riêng chúng.</p>
@@ -41,7 +38,6 @@
 <tr><td><code>desktopCapture</code></td><td>Ghi cửa sổ hoặc toàn màn hình qua hộp chọn của Chrome.</td></tr>
 <tr><td><code>activeTab</code>, <code>scripting</code></td><td>Gắn thanh điều khiển vào tab Google Meet đang mở, sau khi bạn bấm extension.</td></tr>
 <tr><td><code>storage</code></td><td>Lưu cài đặt và ngôn ngữ đã chọn.</td></tr>
-<tr><td><code>tts</code></td><td>Đọc tên người tham gia trong danh sách theo ngôn ngữ đã chọn bằng giọng đọc cục bộ.</td></tr>
 <tr><td><code>offscreen</code></td><td>Giữ bản ghi tab chạy khi popup đóng.</td></tr>
 <tr><td>Truy cập <code>meet.google.com</code></td><td>Hiện thanh điều khiển nổi và đọc tên người tham gia để điểm danh.</td></tr></table>
 <h2>Dữ liệu nằm ở đâu và cách xóa</h2><p>Mọi thứ nằm trong hồ sơ trình duyệt này. Xóa từng bản ghi hoặc lớp trong Thư viện, hoặc gỡ extension / xóa dữ liệu trang để xóa tất cả. File đã xuất và bản sao lưu nằm ngoài tầm kiểm soát của extension. Xóa trong trình duyệt không phải xóa an toàn kiểu pháp y. Nếu máy hoặc hồ sơ trình duyệt dùng chung, người khác có thể mở được bản ghi của bạn.</p>
